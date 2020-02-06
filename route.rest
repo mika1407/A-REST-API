@@ -1,0 +1,28 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/5e3a7102b97bf83d5c7b8648
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+  "name": "Mika Tiihonen",
+  "subcribedToChannel": "Web Dev Simplefied"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/5e3b4589b97bf83d5c7b864d
+
+###
+
+PATCH http://localhost:3000/subscribers/5e3b53877cd07203b864e792
+Content-Type: application/json
+
+{
+  "name": "New name"
+}
